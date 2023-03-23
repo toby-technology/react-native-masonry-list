@@ -42,6 +42,7 @@ export default class MasonryList extends React.PureComponent {
 			PropTypes.node
 		]),
 		masonryFlatListColProps: PropTypes.object,
+		columnFlatListColProps: PropTypes.object,
 		rerender: PropTypes.bool,
 
 		customImageComponent: PropTypes.oneOfType([
@@ -633,6 +634,7 @@ export default class MasonryList extends React.PureComponent {
 							spacing={this.props.spacing}
 							key={`MASONRY-COLUMN-${index}`}
 							colIndex={index}
+							columnFlatListColProps={this.props.columnFlatListColProps}
 
 							customImageComponent={this.props.customImageComponent}
 							customImageProps={this.props.customImageProps}

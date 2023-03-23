@@ -35,6 +35,7 @@ class Masonry extends React.PureComponent {
             PropTypes.node
         ]),
         masonryFlatListColProps: PropTypes.object,
+        columnFlatListColProps: PropTypes.object,
         rerender: PropTypes.bool,
 
         customImageComponent: PropTypes.oneOfType([
@@ -229,6 +230,7 @@ class Masonry extends React.PureComponent {
                     renderIndividualHeader={this.props.renderIndividualHeader}
                     renderIndividualFooter={this.props.renderIndividualFooter}
                     masonryFlatListColProps={this.props.masonryFlatListColProps}
+                    columnFlatListColProps={this.props.columnFlatListColProps}
 
                     customImageComponent={this.props.customImageComponent}
                     customImageProps={this.props.customImageProps}

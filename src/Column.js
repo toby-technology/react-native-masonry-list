@@ -15,6 +15,7 @@ export default class Column extends React.PureComponent {
 		backgroundColor: PropTypes.string,
 		imageContainerStyle: PropTypes.object,
 		spacing: PropTypes.number,
+		columnFlatListColProps: PropTypes.object,
 
 		customImageComponent: PropTypes.oneOfType([
 			PropTypes.func,
@@ -109,6 +110,7 @@ export default class Column extends React.PureComponent {
 				}}
 				initialNumToRender={this.props.initialNumInColsToRender}
 				removeClippedSubviews={true}
+				{...this.props.columnFlatListColProps}
 				renderItem={this._renderItem}
 			/>
 		);
